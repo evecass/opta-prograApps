@@ -1,0 +1,89 @@
+body{
+    background-color: rgb(238, 255, 176);
+    text-align:center;/* ubicación del texto */
+}
+
+h1{
+
+    color:rgb(182, 12, 12);  /*color de letra */
+    font-size:50px;/*tamaño de letra */
+    font-family:fantasy;/*tipo de letra */
+    font-weight:bold;
+    font-style:italic;
+    line-height:50px;/* espacio */
+    letter-spacing:20px;/* espacio entre letras */
+    text-transform:capitalize;
+    text-align:center;/* ubicación del texto */
+    text-indent:30px;
+}
+
+#addForm button {
+    padding: 10px 20px; /* Tamaño del botón */
+    background-color: #2d90ac; /* Color de fondo azul */
+    color: #000000; /* Color de texto blanco */
+    border-width:2px;/* tamaño del borde */
+    border-color:rgb(52, 21, 230);/* color del borde */
+    border-radius: 50px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima */
+}
+
+h2{
+    line-height:50px;/* espacio */
+}
+
+/* Estilo para los campos de entrada de texto */
+input[type="text"],
+input[type="number"] {
+  width: 30%; /*el ancho*/
+  padding: 10px; /* Espacio alrededor del texto dentro del campo */
+  margin-bottom: 1px; /* Espacio entre cada campo */
+  border: 2px solid #cbbcbc; /* Borde del campo */
+  border-radius: 10px; /* Bordes redondeados */
+  box-sizing: border-box; /* Incluye el borde y el relleno en el tamaño total */
+}
+
+/* Estilos para los botones de eliminar y editar */
+button.deleteButton,
+button.editButton {
+  padding: 5px 10px; /* Ajuste el relleno según sea necesario */
+  color: #fff; /* Color del texto */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  margin-right: 5px; /* Espacio a la derecha del botón */
+}
+
+button.deleteButton {
+    background-color: #b90b1c; /* Color de fondo rojo para el botón de eliminar */
+}
+
+button.editButton {
+  background-color: #1eff00; /* Color de fondo azul para el botón de editar */
+}
+
+#userTable {
+  margin: 0 auto; /* Esto centra la tabla horizontalmente */
+}
+
+#guardarCambios {
+  display: block; /* Hacer que el botón sea un bloque */
+  margin: 0 auto; /* Esto centra el botón horizontalmente */
+}
+
+
+
+/* Estilo para la tabla y las celdas */
+table {
+  border-collapse: collapse; /* Combinar los bordes de las celdas en un solo borde */
+  width: 100%; /* Ancho completo de la tabla */
+}
+
+th, td {
+  border: 1px solid black; /* Borde de 1 píxel sólido */
+  padding: 8px; /* Espaciado interior de las celdas */
+  text-align: left; /* Alinear el texto a la izquierda */
+}
+
+/* Estilo para las celdas de encabezado */
+th {
+  background-color: #f2f2f2; /* Color de fondo gris claro */
+}
