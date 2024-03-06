@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="exam.css">  <!-- Enlazar el css -->
+
+    <title> C R U D </title>
+</head>   
+
+<body>
+
+<header>
+    <h1>JUGADORES DE FUTBOL</h1>
+</header>
+
+<aside>
+    <nav class="menu">
+        <ul>
+            <li><a href="#" onclick="goini()" id="ini">Inicio</a></li>
+            <li><a href="#" onclick="gomenu()" id="ver-menu">Ver jugadores</a></li>
+            <li><a href="#" onclick="goGemenu()" id="gestionar-menu">Gestionar jugadores</a></li>
+        </ul>
+    </nav>
+          
+</aside>
+
+<div id = "inicio" style="display: block;">
+   <img class="logo" src="LOGO.png" alt="">
+   <h2>"Conexión sin fronteras: Desde las estrellas 
+    internacionales <br>hasta los talentos locales, todos
+    tienen un lugar aquí."</h2>
+</div>
+
+<div id = "menu" style="display: none;">
+    <h2>Lista de Jugadores</h2>
+    <ul id="Lista"></ul>
+</div>
+
+<div id = "Formulario" style="display: none;">
+    <h2>Agrega datos del jugador</h2>
+
+    <!-- Formulario para agregar un nuevo usuario -->
+    <form id="addForm">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <br><br>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" required>
+        <br><br>
+
+        <label for="pos">Posición:</label>
+        <input type="text" id="pos" name="pos" required>
+        <br><br>
+
+        <label>salsas</label>
+        <br>
+        <input type="checkbox" id="Nike" name="salsas" value="Nike">
+        <label for="Nike">Nike
+        <input type="checkbox" id="Adidas" name="salsas" value="Adidas">
+        <label for="Adidas">Adidas</label>
+        <br><br>
+
+        
+<label for="picor">Picor:</label><br>
+<input type="radio" id="estadioOlimpico" name="estadios" value="picor1">
+<label for="estadioOlimpico">picor1</label><br>
+<input type="radio" id="estadioSanJorge" name="estadios" value="picor2">
+<label for="estadioSanJorge">picor2</label><br>
+<input type="radio" id="estadioColima" name="estadios" value="picor3">
+<label for="estadioColima">picor3</label><br>
+<br>
+<label for="personas">Persona:</label>
+<select id="equipo" name="equipo" required>
+    <option value="persona1">persona1</option>
+    <option value="persona2">persona2</option>
+    <option value="persona3">persona3</option>
+</select>
+<br><br>
+
+        <!-- Botón para agregar los datos -->
+        <button type="submit">Agregar</button>
+        <br><br>
+        <!-- Botón para guardar cambios -->
+        <button type="button" id="guardarCambios" style="display: none;">Guardar cambios</button>
+        <br>
+        <button type="button" id="CancelarCambios" style="display: none;">Cancelar cambios</button>
+    </form>
+
+    <!-- Lista de usuarios agregados -->
+    <h2>LISTA DE JUGADORES DE FUTBOL DE LA FACULTAD DE TELEMÁTICA</h2>
+    <table id="userTable">
+        <thead>
+            <tr>
+                <th style="color: aliceblue;">Nombre</th>
+                <th style="color: aliceblue;">Edad</th>
+                <th style="color: aliceblue;">Posición</th>
+                <th style="color: aliceblue;">Patrocinador</th>
+                <th style="color: aliceblue;">Estadio</th>
+                <th style="color: aliceblue;">Equipo</th>
+                <th style="color: aliceblue;">Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="userList"></tbody>  
+    </table>
+</div>
+    
+    
+    <!-- Enlazar el html a js -->
+    <script src="exam.js"></script> 
+    
+    
+    <footer>
+        <p>Derechos Reservados &copy; 2024-Realizado por Aranda, Castrejón y Cervantes</p>
+    </footer>
+    
+</body>
+</html>
